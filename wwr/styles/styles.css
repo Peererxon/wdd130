@@ -1,0 +1,107 @@
+:root{
+    --primary-color: #78C5D7;
+    --secundary-color: #FFFFFF;
+    --accent1-color: #FAE173;
+    --accent2-color: #0B4168;
+}
+
+body {
+    background-color: var(--secundary-color); 
+}
+header {
+    display: flex;
+    align-items: center;
+    background-color:var(--accent1-color);
+}
+
+header > a {
+    flex: 0.2;
+}
+
+.logo, card-img {
+    width: 80px;
+}
+
+nav {
+    flex: 0.8;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+}
+nav a:hover {
+    color: var(--secundary-color);
+    background-color: var(--accent2-color);
+}
+
+#hero-img {
+    width: 100%;
+}
+
+.msg {
+    background-color: black;
+}
+.msg h2 {
+    color: var(--secundary-color);
+}
+
+.msg p {
+    color: var(--secundary-color);
+}
+
+h4 {
+    color: var(--accent2-color);
+}
+
+
+.home-title {
+    color: var(--accent2-color);
+}
+
+.book, .join{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.book:hover, .join:hover {
+    color: var(--accent1-color);
+}
+
+
+#content{
+    max-width: 1600px;
+    margin: auto;
+}
+
+nav, a, #hero-msg h1, #hero-msg h4, .button-box, main, section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+    background-color: var(--primary-color);
+}
+
+footer{
+    background-color: var(--accent2-color);
+}
+
+footer h3 {
+    color: var(--accent1-color);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--secundary-color);
+}
+
+footer a:hover {
+    color: var(--accent1-color);
+}
+
+footer h3 a:hover {
+    text-decoration: underline;
+}
