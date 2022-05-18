@@ -1,0 +1,30 @@
+body{
+    max-width: 1280px;
+    margin: auto;
+}
+
+section {
+    width: 100%;
+}
+
+.aboutImg{
+    width: 100%;
+}
+
+.images{
+    background-color: gray;
+    padding: 40px 0px;
+}
+
+.images img {
+    border-radius: 50%;
+    width: 25%;
+    margin-left: 5%;
+    border: 10px solid lightgray;
+    box-sizing: border-box;
+}
+
+.images div{
+    width: 80%;
+    margin: auto;
+}
