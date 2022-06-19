@@ -235,6 +235,42 @@ footer h3 a:hover {
   text-decoration: underline;
 }
 
+/* FAQ CSS SECTION */
+.introduction {
+  color: var(--accent2-color);
+  max-width: 700px;
+  margin: auto;
+}
+
+.introduction p {
+  margin-bottom: 20px;
+}
+
+.faq-answer {
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 15px;
+  color: var(--accent2-color);
+}
+
+.faq-answer summary {
+  border: 1px solid var(--accent2-color);
+  text-align: left;
+  font-size: 18px;
+  padding-left: 25px;
+}
+
+.faq-answer p {
+  border: 1px solid var(--accent2-color);
+  margin: 0;
+  padding: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* END FAQ CSS SECTION */
+
 @media screen and (max-width: 900px) {
   #hero,
   .home-grid {
