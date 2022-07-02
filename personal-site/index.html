@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/personal.css" />
     <title>Home</title>
   </head>
   <body>
     <div>
-      <header>
-        <a href="index.html">
+      <header class="header">
+        <a href="index.html" class="logo">
           <img src="images/logo.png" alt="Logo image" />
         </a>
-        <nav>
+        <nav class="links">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <a href="FAQ.html">FAQ</a>
@@ -20,7 +21,7 @@
       </header>
 
       <main>
-        <section>
+        <section class="introduction">
           <div>
             <p>
               Hello! I am Anderson Gil, and I am a front-end developer and I am
@@ -39,9 +40,14 @@
           </div>
         </section>
 
-        <section>
-          <h2>Services</h2>
-          <div>
+        <section class="services">
+          <h2 class="services__title">Services</h2>
+          <div class="services__service">
+            <img
+              src="images/mobile.jpg"
+              alt="image for the mobile service"
+              width="500"
+            />
             <h3>Mobile Applications</h3>
             <p>
               Intuitive and engaging mobile apps for iOS and Android that brings
@@ -54,28 +60,28 @@
               mobile application could be the solution you are looking for.
               Also, we are with you all along the way of the process
             </p>
-            <img
-              src="images/mobile.jpg"
-              alt="image for the mobile service"
-              width="500"
-            />
           </div>
 
-          <div>
+          <div class="services__service">
+            <img
+              src="images/web_page1.jpg"
+              alt="image for the websites"
+              width="500"
+            />
             <h3>Websites</h3>
             <p>
               Dinamic Websites, responsives to cellphones,tablets,laptops...
               Mades for reach your business to the next level ( the digital age
               ) and be known for everyone.
             </p>
-            <img
-              src="images/web_page1.jpg"
-              alt="image for the websites"
-              width="500"
-            />
           </div>
 
-          <div>
+          <div class="services__service">
+            <img
+              src="images/eccomerce2.jpg"
+              alt="image for the online shop"
+              width="500"
+            />
             <h3>Online Shops</h3>
             <p>
               Ecommerces to automate your business, with modules for payments
@@ -86,11 +92,6 @@
               the information that our systems will provide. All this while
               still boasting top-notch looks and performance.
             </p>
-            <img
-              src="images/eccomerce2.jpg"
-              alt="image for the online shop"
-              width="500"
-            />
             <p></p>
           </div>
         </section>

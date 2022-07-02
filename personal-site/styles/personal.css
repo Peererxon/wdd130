@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@300&family=Fraunces:opsz,wght@9..144,400;9..144,700&display=swap");
+:root {
+  --primary-color: #ff422e;
+  --secondary-color: #a33327;
+  --accent1-color: #689775;
+  --accent2-color: #ca8e7b;
+  --heading-font: "Fraunces", serif;
+  --paragraph-font: "Commissioner", sans-serif;
+  --headline-color-on-white: #ca8e7b;
+  --headline-color-on-color: #ff422e;
+  --paragraph-color-on-white: #ff422e;
+  --paragraph-color-on-color: #ff422e;
+  --paragraph-background-color: black;
+  --nav-link-color: black;
+  --nav-hover-link-color: #ca8e7b;
+  --nav-background-color: #ca8e7b;
+  --nav-hover-background-color: black;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  background-color: var(--accent2-color);
+  padding: 30px 0;
+}
+
+.logo img {
+  height: 120px;
+}
+
+.links a,
+footer a {
+  transition: all 0.7s;
+  text-decoration: none;
+  padding: 15px;
+  color: var(--nav-link-color);
+}
+
+.links a:hover,
+footer a:hover {
+  border-radius: 12px;
+  color: var(--nav-hover-link-color);
+  background-color: black;
+}
+
+.logo {
+  grid-column: 1 / span 2;
+  justify-self: center;
+}
+
+.links {
+  grid-column: 3 / span 3;
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+a,
+p {
+  font-family: var(--paragraph-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--heading-font);
+}
+
+p,
+h1,
+h2,
+h3 {
+  color: var(--paragraph-color-on-color);
+}
+
+.introduction {
+  background-color: black;
+}
+
+.introduction p {
+  width: 80%;
+  margin: auto;
+  padding: 25px 0px;
+}
+
+.services {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 40px 1fr;
+  column-gap: 15px;
+}
+
+.services__title {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  grid-column: 1 / span 3;
+  align-self: center;
+}
+
+.services__service {
+  border: 3px solid var(--accent1-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  text-align: justify;
+}
+
+.services img {
+  max-width: 100%;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+footer {
+  background-color: var(--accent1-color);
+  text-align: center;
+  padding: 20px 0px;
+}
+
+footer h2 {
+  margin-top: 0;
+  padding-top: 10px;
+  color: white;
+}
+
+footer p {
+  color: white;
+}
+
+footer a {
+  color: var(--nav-link-color);
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services__service p {
+    width: 80%;
+  }
+}

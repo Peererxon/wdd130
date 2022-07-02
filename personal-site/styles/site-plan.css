@@ -61,6 +61,8 @@ header {
   text-align: center;
   color: var(--paragraph-color-on-color);
   background-color: var(--paragraph-background-color);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 header > h1,
 header > h2 {
