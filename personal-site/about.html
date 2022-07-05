@@ -9,7 +9,38 @@
   </head>
   <body>
     <div>
+      <!-- The overlay -->
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a
+          href="javascript:void(0)"
+          class="closebtn"
+          onclick="closeNav();toggleMenu()"
+          >&times;</a
+        >
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Logo image" />
+          </a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="FAQ.html">FAQ</a>
+        </div>
+      </div>
+      <!-- END overlay -->
       <header class="header">
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <div
+          id="burgerIcon"
+          class="container"
+          onclick="toggleMenu(); openNav()"
+        >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
         <a href="index.html" class="logo">
           <img src="images/logo.png" alt="Logo image" />
         </a>
@@ -157,4 +188,20 @@
       </footer>
     </div>
   </body>
+  <script type="text/javascript">
+    /* Open */
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    /* Close */
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+
+    function toggleMenu() {
+      const burgerICon = document.getElementById("burgerIcon");
+      burgerICon.classList.toggle("change");
+    }
+  </script>
 </html>
