@@ -116,7 +116,7 @@ body {
 footer a {
   transition: all 0.7s;
   text-decoration: none;
-  padding: 15px;
+  padding: 25px;
   color: var(--nav-link-color);
 }
 
@@ -257,11 +257,82 @@ h3 {
   height: 300px;
   max-width: 100%;
 }
+/*End About*/
 
+/* FAQ */
+
+.heroSection {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.heroSection img {
+  max-width: 100%;
+  width: 300px;
+  margin: auto;
+}
+
+summary {
+  border: 4px solid transparent;
+  outline: none;
+  padding: 1rem;
+  display: block;
+  background: #444;
+  color: white;
+  padding-left: 2.2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+details {
+  background-color: var(--accent1-color);
+  width: 600px;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+details[open] > summary:before {
+  transform: rotate(90deg);
+}
+
+.content {
+  border-top: none;
+  padding: 10px;
+  border-top: none;
+  max-height: 0px;
+  transition: 1.5s max-height ease;
+}
+
+details[open] > .content {
+  max-height: 200px;
+}
+summary:before {
+  content: "";
+  border-width: 0.4rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+  position: absolute;
+  top: 1.3rem;
+  left: 1rem;
+  transform: rotate(0);
+  transform-origin: 0.2rem 50%;
+  transition: 0.25s transform ease;
+}
+
+details p {
+  padding: 10px;
+  color: white;
+  background-color: var(--accent2-color);
+}
+
+/* END FAQ */
 footer {
   background-color: var(--accent1-color);
   text-align: center;
-  padding: 20px 0px;
+  padding: 25px 0px;
 }
 
 footer h2 {
@@ -270,13 +341,16 @@ footer h2 {
   color: white;
 }
 
+.link_footer {
+  margin-top: 30px;
+}
+
 footer p {
   color: white;
 }
 
 footer a {
   color: var(--nav-link-color);
-  margin-bottom: 0;
 }
 
 @media screen and (max-width: 900px) {
