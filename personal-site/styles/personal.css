@@ -112,6 +112,10 @@ body {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 /* END menu animated */
+
+.links a {
+  font-size: 20px;
+}
 .links a,
 footer a {
   transition: all 0.7s;
