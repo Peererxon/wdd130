@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="styles/personal.css" />
     <title>FAQ</title>
   </head>
+  <script type="text/javascript">
+    /* Open */
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    /* Close */
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+
+    function toggleMenu() {
+      const burgerICon = document.getElementById("burgerIcon");
+      burgerICon.classList.toggle("change");
+    }
+  </script>
   <body>
     <div>
       <!-- The overlay -->
@@ -139,20 +155,4 @@
       </footer>
     </div>
   </body>
-  <script type="text/javascript">
-    /* Open */
-    function openNav() {
-      document.getElementById("myNav").style.height = "100%";
-    }
-
-    /* Close */
-    function closeNav() {
-      document.getElementById("myNav").style.height = "0%";
-    }
-
-    function toggleMenu() {
-      const burgerICon = document.getElementById("burgerIcon");
-      burgerICon.classList.toggle("change");
-    }
-  </script>
 </html>
